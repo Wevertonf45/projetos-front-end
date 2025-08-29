@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!--CONFIGURAÇÕES-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--LINKS CSS-->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/menu-l.css">
+    <link rel="stylesheet" href="styles/media.css" media="screen">
+
+    <!--LINKS FRAMEWORKS E BIBLIOTECAS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!--TITULO DO SITE-->
+    <title>Document</title>
+  </head>
+  <body>
+    <!--===========================================================================================-->
+    <header>
+      <nav>
+        <!--LOGO-->
+        <div id="logo">
+          <a href="#">☕ Coffee</a>
+        </div>
+        
+        <!--MENU LATERAL-->
+        <ul id="menu-l">
+          <i onclick="fecharMenu()" id="fechar" class="fa-solid fa-xmark"></i>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+        
+        <!--MENU HORIZONTAL-->
+        <ul id="menu-h">
+          <li><a href="#seçao-inicio">Home</a></li>
+          <li><a href="#seçao-about">Sobre</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Contato</a></li>
+          <i id="abrir" onclick="abrirMenu()" class="fa-solid fa-bars"></i>
+        </ul>
+      </nav>
+    </header>
+    <!--===========================================================================================-->
+
+    <main>
+
+      <!--SEÇAO INICIO-->
+      <section id="seçao-inicio">
+
+        <!--TEXTOS-->
+        <div id="texto">
+          <h1>Best coffee</h1>
+          <h2>Faça seu dia melhor com nosso café especial!</h2>
+          <p>Bem vindo ao nosso paraíso do café, onde cada grão conta uma história e cada copo desperta alegria!</p>
+         
+          <!--BOTOES-->
+          <div id="btn">
+            <a id="btn1" href="#">Comprar</a>
+            <a id="btn2" href="#">Contato</a>
+          </div>
+        </div>
+
+        <!--IMAGEM-->
+        <div id="imagem">
+          <img src="images/coffee-hero-section.png" alt="">
+        </div>
+      </section>
+
+
+      <!--SEÇAO SOBRE NOS-->
+      <section id="seçao-2">
+
+        <!--IMAGEM-->
+        <div id="img-about">
+          <img src="images/about-image.jpg" alt="">
+        </div>
+
+        <!--TEXTOS-->
+        <div id="texto-about">
+          <h1>SOBRE NÓS</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis 
+            ea officiis rerum, blanditiis labore exercitationem quos autem animi dicta 
+            quod necessitatibus quidem deleniti aperiam eligendi distinctio ducimus dolorem 
+            atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis error 
+            totam provident, ducimus dolore eaque distinctio iusto magni, debitis doloribus 
+            inventore adipisci dolores aliquam omnis, molestias ullam soluta praesentium sapiente.
+          </p>
+
+          <!--ICONS REDES-->
+          <div id="redes-about">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!--SEÇAO MENU-->
+      <section id="seçao-3">
+        <h1>Nosso menu:</h1>
+
+        <ul>
+          <!--ITEM-->
+          <li>
+            <img src="images/cold-beverages.png">
+            <h1>Bebidas quentes</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </li>
+                      
+          <!--ITEM-->
+          <li>
+            <img src="images/hot-beverages.png">
+            <h1>Bebidas quentes</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </li>
+                      
+          <!--ITEM-->
+          <li>
+            <img src="images/desserts.png">
+            <h1>Bebidas quentes</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </li>
+                      
+          <!--ITEM-->
+          <li>
+            <img src="images/refreshment.png">
+            <h1>Bebidas quentes</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </li>
+                      
+          <!--ITEM-->
+          <li>
+            <img src="images/burger-frenchfries.png">
+            <h1>Bebidas quentes</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </li>
+                      
+          <!--ITEM-->
+          <li>
+            <img src="images/special-combo.png">
+            <h1>Bebidas quentes</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- SEÇAO GALERIA-->
+      <section id="seçao-4">
+				<h1>Nossa galeria:</h1>
+				<ul>
+					<li>
+						<img src="images/gallery-1.jpg">
+					</li>
+
+					<li>
+						<img src="images/gallery-2.jpg">
+					</li>
+
+					<li>
+						<img src="images/gallery-3.jpg">
+					</li>
+
+					<li>
+						<img src="images/gallery-4.jpg">
+					</li>
+
+					<li>
+						<img src="images/gallery-5.jpg">
+					</li>
+
+					<li>
+						<img src="images/gallery-6.jpg">
+					</li>
+				</ul>
+			</section>
+
+      <!-- SEÇAO CONTATO -->
+      <section id="seçao-5">
+        <h1>CONTATO:</h1>
+			  <ul>
+				  <li>
+					  <i class="fa-solid fa-location-crosshairs"></i>
+					  <p>Rua Fulano de Tal, Alagoas-Brasil</p>
+					</li>
+
+					<li>
+					  <i class="fa-solid fa-envelope"></i>
+					  <p>nome10271018@gmail.com</p>
+					</li>
+
+					<li>
+					    <i class="fa-solid fa-phone"></i>
+					    <p>+55 00 0000 0000</p>
+					</li>
+
+					<li>
+					  <i class="fa-solid fa-clock"></i>
+						<p>Segunda - sexta-feira: 7:00AM - 18:00PM</p>
+					</li>
+
+						<li>
+								<i class="fa-solid fa-clock"></i>
+								<p>Sábado: 9:00AM - 13:00PM</p>
+						</li>
+
+						<li>
+							<i class="fa-solid fa-clock"></i>
+							<p>Domingo: Fechado</p>
+						</li>
+
+						<li>
+							<i class="fa-solid fa-globe"></i>
+							<p>https://www.wevertonf45.com.br</p>
+						</li>
+				</ul>
+
+				<form>
+						<input placeholder="Seu nome" type="text">
+						<input placeholder="E-mail" type="email">
+						<textarea placeholder="Sua mensagem"></textarea>
+						<input id="btn3" type="submit">
+				</form>
+		</section>
+    </main>
+    <!--===========================================================================================-->
+
+    <footer>
+      <p>@Wevertonf45</p>
+    </footer>
+    <!--===========================================================================================-->
+
+    <!--AREA SCRIPTS-->
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

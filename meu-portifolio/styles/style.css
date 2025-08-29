@@ -1,0 +1,409 @@
+:root{
+  --bordaRed: 1px dashed red;
+  --bordaBlue: 1px dashed blue;
+  --azul: rgba(0, 0, 255, 0.8);
+  --azul2: rgba(96, 96, 238, 0.8);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* CONF. BODY */
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+/* CONTAINER CABEÇALHO */
+header{
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.335);
+}
+
+/* NAVBAR */
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.335);
+}
+
+nav > ul > li{
+  display: inline-block;
+  list-style: none;
+  margin: 20px;
+}
+
+nav > ul > li > a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+nav > ul > li > a:hover{
+  background-color: var(--azul2);
+  color: white;
+  border-radius: 10px;
+  transition: .5s;
+  text-decoration: underline;
+}
+
+/* SEÇAO INICIO */
+section#inicio{
+  margin-top: 100px;
+  width: 100%;
+  height: 400px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.301);
+}
+
+#infos{
+  margin: 0 0 0 50px;
+  padding: 40px 16px;
+  height: 350px;
+  width: 55%;
+  line-height: 50px;
+}
+
+#infos > p#hello{
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#infos > h1{
+  font-size: 50px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+#infos > h2{
+  font-size: 40px;
+  color: var(--azul2);
+  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+#infos > p{
+  color: white;
+  text-align: justify;
+  line-height: 30px;
+}
+
+#redes{
+  display: flex;
+  margin: 5px 0 0 0;
+  align-items: center;
+  padding: 10px;
+}
+
+#redes > a{
+  display: inline-block;
+}
+
+#redes > button{
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .2s ease-in;
+  background-color: var(--azul2);
+  color: white;
+  text-shadow: 0px 0px 10px white;
+}
+
+#redes > button > a{
+  color: white;
+  text-decoration: none;
+}
+
+#redes > button:hover{
+  scale: 110%;
+  background-color: transparent;
+  color: black;
+  border: 1px solid white;
+}
+
+#redes > a{
+  color: white;
+  margin: 0 10px 0 15px;
+}
+
+#redes > a > i{
+  transition: .2s ease-in;
+  font-size: 25px;
+  color: var(--azul2);
+}
+
+#redes > a > i:hover{
+  scale: 150%;
+}
+
+/* SEÇAO SERVIÇOS */
+section#services{
+  width: 100%;
+  height: 400px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.301);
+}
+
+section#services > h1{
+  color: white;
+  font-size: 50px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  text-align: center;
+  font-family: serif;
+}
+
+section#services > ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+section#services > ul > li{
+  list-style: none;
+  border: 1px solid var(--azul2);
+  color: white;
+  width: 350px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  height: 250px;
+}
+
+section#services > ul > li > i{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+section#services > ul > li > h1{
+  margin-bottom: 20px;
+}
+
+/* SEÇAO SKILLS */
+section#skills{
+  margin: 30px 0 0 0;
+  color: white;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.301);
+  width: 100%;
+}
+
+section#skills > h1{
+  text-align: center;
+  font-size: 40px;
+  font-family: serif;
+  margin-bottom: 60px;
+}
+
+#skills-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#skills-container > #front{
+  border: 1px solid var(--azul);
+  width: 60%;
+  border-radius: 15px;
+  background-color: var(--azul);
+  padding: 10px;
+}
+
+#skills-container > #front > h1{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#skills-container > #front > ul{
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#skills-container > #front > ul > li{
+  background-color: white;
+  color: black;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 0 20px 0 0;
+}
+
+#skills-container > #front > ul > li > i{
+  font-size: 70px;
+  color: black;
+}
+
+#skills-container > #front > ul > li > p{
+  font-weight: 600;
+}
+
+#skills-container > #front > ul > li > img{
+  width: 70px;
+  height: 70px;
+}
+
+#skills-container > #back{
+  border: 1px solid var(--azul2);
+  width: 100%;
+  margin-top: 50px;
+  background-color: var(--azul);
+  padding: 10px;
+  width: 60%;
+  border-radius: 15px;
+}
+
+#skills-container > #back > h1{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#skills-container > #back > ul{
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#skills-container > #back > ul > li{
+  background-color: white;
+  color: black;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 0 20px 0 0;
+}
+
+#skills-container > #back > ul > li > i{
+  font-size: 70px;
+  color: black;
+}
+
+#skills-container > #back > ul > li > p{
+  font-weight: 600;
+}
+
+#skills-container > #back > ul > li > img{
+  width: 70px;
+  height: 70px;
+}
+
+section#projects{
+  width: 100%;
+  padding: 20px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.301);
+}
+
+#projects > h1{
+  text-align: center;
+  color: white;
+  padding: 30px 0 30px 0;
+  font-size: 40px;
+  font-family: serif;
+}
+
+section#projects > ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#projects > ul > li{
+  width: 350px;
+  padding: 10px;
+  border: 1px solid var(--azul2);
+  color: white;
+  border-radius: 10px;
+  height: 390px;
+  list-style: none;
+  margin: 0 20px;
+}
+
+section#projects > ul > li > img{
+  width: 100%;
+  margin-bottom: 20px;
+  height: 150px;
+}
+
+section#projects > ul > li > h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section#projects > ul > li > p{
+  text-align: justify;
+}
+
+.view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.view > button{
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  transition: .3s ease;
+  width: 80px;
+  background-color: rgba(0, 0, 255, 0.8);
+}
+
+.view > button:hover{
+  background-color: var(--azul2);
+  border: 1px solid black;
+  scale: 120%;
+}
+
+.view > button:hover > a{
+  color: white;
+}
+
+.view > button > a{
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 100px;
+  color: white;
+}
+
+footer > p{
+  text-align: center;
+  color: yellow;
+  font-weight: 900;
+  font-size: 30px;
+}

@@ -1,0 +1,16 @@
+@media (max-width: 883px){
+  #menu-h li{
+    display: none;
+  }
+
+  #menu-h i{
+    display: block;
+    margin: 20px;
+  }
+}
+
+@media (min-width: 884px){
+  #menu-h i{
+    display: none;
+  }
+}

@@ -1,0 +1,399 @@
+/* VARIAVEIS */
+:root{
+  --branco: #fff;
+  --cor-dark: #252525;
+  --cor1: #3b141c;
+  --cor2: #f3961c;
+  --rosa-claro: #f1d6e9;
+  --gray: #ccc;
+}
+
+/* CONFIGURAÇOES GLOBAIS */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body{
+  height: 100vh;
+  width: 100vw;
+}
+
+/* HEADER */
+header{
+  width: 100%;
+}
+
+/* NAVBAR */
+nav{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor1);
+}
+
+nav > div#logo{
+  margin: 30px;
+}
+
+nav > div#logo > a{
+  text-decoration: none;
+  font-size: 36px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+nav > ul > li{
+  display: inline-block;
+  list-style: none;
+  margin: 20px;
+}
+
+nav > ul > li > a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+nav > ul > li > a:hover{
+  background-color: var(--cor2);
+  border-radius: 10px;
+  transition: .4s;
+  text-decoration: underline;
+}
+
+/* NAVBAR LATERAL */
+#menu-l{
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--cor1);
+}
+
+ul#menu-l > li{
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ÍCONES ABRIR E FECHAR */
+i{
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#fechar{
+  margin: 20px;
+}
+
+/* SEÇAO INICIO */
+#seçao-inicio{
+  display: flex;
+  background-color: var(--cor1);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#seçao-inicio > div#texto{
+  margin: 0 0 0 40px;
+}
+
+#seçao-inicio > div#texto > h1{
+  color: var(--cor2);
+  font-size: 60px;
+  margin: 0 0 20px 0;
+  font-family: sans-serif;
+}
+
+#seçao-inicio > div#texto > h2{
+  color: white;
+  font-size: 30px;
+  margin: 0 0 20px 0;
+}
+
+#seçao-inicio > div#texto > P{
+  color: white;
+  margin: 0 0 20px 0;
+}
+
+#seçao-inicio > div#texto > div#btn > a{
+  display: inline-block;
+  margin: 0 10px 0 0;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#seçao-inicio > div#texto > div#btn > a#btn1{
+  background-color: var(--cor2);
+  color: black;
+  padding: 5px;
+  border-radius: 16px;
+  font-weight: 600;
+  border: 1px solid;
+}
+
+#seçao-inicio > div#texto > div#btn > a#btn1:hover{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+#seçao-inicio > div#texto > div#btn > a#btn2{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 16px;
+}
+
+#seçao-inicio > div#texto > div#btn > a#btn2:hover{
+  background-color: var(--cor2);
+  color: black;
+  font-weight: 600;
+  border: 1px solid;
+}
+
+div#imagem{
+  margin: 0 60px 0 0;
+}
+
+div#imagem > img{
+  width: 380px;
+}
+
+/* SEÇAO ABOUT */
+#seçao-2{
+  display: flex;
+  height: auto;
+  width: 100%;
+  padding-top: 30px;
+}
+
+div#img-about{
+  padding: 0 35px;
+}
+
+div#img-about > img{
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+}
+
+div#texto-about{
+  padding: 0 95px;
+}
+
+div#texto-about > h1{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 36px;
+  margin: 0 0 25px 0;
+}
+
+div#texto-about > p{
+  font-family: sans-serif;
+  margin: 0 0 25px 0;
+}
+
+div#redes-about{
+  display: flex;
+  justify-content: center;
+}
+
+div#redes-about > a{
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+
+div#redes-about > a > i{
+  color: black;
+}
+
+div#redes-about > a > i:hover{
+  color: rgb(202, 134, 9);
+  scale: 120%;
+}
+
+#seçao-3{
+  background-color: var(--cor-dark);
+  color: white;
+  width: 100%;
+  padding: 20px 50px 20px 50px;
+}
+
+#seçao-3 > h1{
+  text-align: center;
+  font-size: 36px;
+  margin: 0 0 30px 0;
+}
+#seçao-3 > ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#seçao-3 > ul > li{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#seçao-3 > ul >li > img{
+  width: 180px;
+  margin: 0 0 20px 0;
+}
+
+#seçao-3 > ul >li > h1{
+  margin: 0 0 20px 0;
+}
+
+/* SEÇAO GALERIA */
+#seçao-4{
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+
+#seçao-4 > h1{
+  text-align: center;
+  font-size: 36px;
+  padding: 0 0 25px 0;
+}
+
+#seçao-4 > ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#seçao-4 > ul > li{
+  list-style: none;
+  width: 350px;
+}
+
+#seçao-4 > ul > li > img{
+  width: 100%;
+  height: 350px;
+  cursor: zoom-in;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+#seçao-4 > ul > li:hover > img{
+  transform: scale(1.2);
+}
+
+#seçao-5{
+  background-color: rgb(241, 221, 225);
+  color: black;
+  padding: 0 0px 0 20px ;
+}
+
+#seçao-5 > h1{
+  text-align: center;
+  margin-bottom: 25px;
+  padding-top: 20px;
+}
+
+#seçao-5 > ul > li{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  width: 350px;
+}
+
+#seçao-5 > ul > li > i{
+  font-size: 16px;
+  color: black;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+form > input{
+  width: 80%;
+  height: 50px;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+}
+
+form > input::placeholder{
+  color: black;
+}
+
+textarea{
+  margin-bottom: 20px;
+  background-color: transparent;
+  width: 80%;
+  height: 90px;
+  outline: none;
+  padding: 10px 20px;
+}
+
+textarea::placeholder{
+  color: black;
+}
+
+#btn3{
+  font-weight: 600;
+  background-color: var(--cor1);
+  color: white;
+}
+
+#btn3:hover{
+  background-color: transparent;
+  color: black;
+  transition: .5s;
+}
+
+footer{
+  background-color: var(--cor-dark);
+  height: 60px;
+  padding: 20px;
+}
+
+footer > p{
+  text-align: center;
+  color: white;
+}
