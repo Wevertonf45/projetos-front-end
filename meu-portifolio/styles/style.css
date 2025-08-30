@@ -188,126 +188,63 @@ section#services>ul>li>h1 {
 }
 
 /* SEÇAO SKILLS */
-section#skills {
-  margin: 30px 0 0 0;
-  color: white;
-  padding: 20px 0;
+.experience-section {
+  text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.301);
-  width: 100%;
+  padding: 30px 20px 50px 20px;
 }
 
-section#skills>h1 {
-  text-align: center;
+.experience-section h1 {
   font-size: 40px;
+  color: white;
   font-family: serif;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
-#skills-container {
+.experience-container {
   display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
-#skills-container>#front {
-  border: 1px solid black;
-  width: auto;
-  border-radius: 15px;
-  background-color: var(--Secundária);
-  padding: 10px;
+.experience-box {
+  background: var(--Secundária);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 350px;
 }
 
-#skills-container>#front>h1 {
-  text-align: center;
-  font-size: 30px;
+.experience-box h2 {
+  font-size: 25px;
   margin-bottom: 20px;
-  color: var(--Texto-principal);
 }
 
-#skills-container>#front>ul {
+.experience-item {
   display: flex;
-  margin-top: 20px;
-  justify-content: center;
   align-items: center;
-  width: 100%;
+  justify-content: space-between;
+  margin: 12px 0;
 }
 
-#skills-container>#front>ul>li {
-  background-color: white;
-  color: black;
-  width: 150px;
+.experience-item span {
+  font-weight: bold;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  margin: 0 20px 0 0;
+  gap: 8px;
 }
 
-#skills-container>#front>ul>li>i {
-  font-size: 70px;
+.experience-item small {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.experience-item i {
   color: black;
 }
 
-#skills-container>#front>ul>li>p {
-  font-weight: 600;
-}
-
-#skills-container>#front>ul>li>img {
-  width: 70px;
-  height: 70px;
-}
-
-#skills-container>#back {
-  border: 1px solid black;
-  width: 100%;
-  margin-top: 50px;
-  background-color: var(--Secundária);
-  padding: 10px;
-  width: 60%;
-  border-radius: 15px;
-}
-
-#skills-container>#back>h1 {
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: var(--Texto-principal);
-}
-
-#skills-container>#back>ul {
-  display: flex;
-  margin-top: 20px;
-  justify-content: center;
-}
-
-#skills-container>#back>ul>li {
-  background-color: white;
-  color: black;
-  width: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  margin: 0 20px 0 0;
-}
-
-#skills-container>#back>ul>li>i {
-  font-size: 70px;
-  color: black;
-}
-
-#skills-container>#back>ul>li>p {
-  font-weight: 600;
-}
-
-#skills-container>#back>ul>li>img {
-  width: 70px;
-  height: 70px;
-}
-
+/* SEÇAO PROJETOS */
 section#projects {
   width: 100%;
   padding: 20px 30px;
