@@ -1,11 +1,29 @@
-:root{
+:root {
   --bordaRed: 1px dashed red;
   --bordaBlue: 1px dashed blue;
   --azul: rgba(0, 0, 255, 0.8);
   --azul2: rgba(96, 96, 238, 0.8);
+
+  /*🎨 Paleta sugerida*/
+  --Fundo-escuro: #1E293B;
+  /*um azul bem escuro, contraste elegante)*/
+  --Primária: #64748B;
+  /*um azul acinzentado, versátil*/
+  --Secundária: #04BBDF;
+  /*um azul vibrante, para botões*/
+  --quase-branco: #F8FAFC;
+  /*quase branco, suave titulos*/
+  --Neutro-claro: #E2E8F0;
+  /*para cards, caixas, inputs*/
+  --Acento: #0EA5E9;
+  /*para hover, links*/
+  --Texto-principal: #111827;
+  /*quase preto, legível*/
+  --Texto-secundário: #475569;
+  /*cinza-azulado, menos contraste*/
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -14,36 +32,36 @@
 }
 
 /* CONF. BODY */
-body{
+body {
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  background-color: var(--Fundo-escuro);
 }
 
 /* CONTAINER CABEÇALHO */
-header{
+header {
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.335);
 }
 
 /* NAVBAR */
-nav{
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   width: 100%;
-  background-color: black;
+  background-color: var(--Fundo-escuro);
   border-bottom: 1px solid rgba(255, 255, 255, 0.335);
 }
 
-nav > ul > li{
+nav>ul>li {
   display: inline-block;
   list-style: none;
   margin: 20px;
 }
 
-nav > ul > li > a{
+nav>ul>li>a {
   text-decoration: none;
   color: white;
   font-weight: 600;
@@ -51,23 +69,23 @@ nav > ul > li > a{
   padding: 10px;
 }
 
-nav > ul > li > a:hover{
-  background-color: var(--azul2);
-  color: white;
+nav>ul>li>a:hover {
+  background-color: var(--Secundária);
+  color: black;
   border-radius: 10px;
   transition: .5s;
   text-decoration: underline;
 }
 
 /* SEÇAO INICIO */
-section#inicio{
+section#inicio {
   margin-top: 100px;
   width: 100%;
   height: 400px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.301);
 }
 
-#infos{
+#infos {
   margin: 0 0 0 50px;
   padding: 40px 16px;
   height: 350px;
@@ -75,91 +93,64 @@ section#inicio{
   line-height: 50px;
 }
 
-#infos > p#hello{
+#infos>p#hello {
   font-size: 50px;
   font-weight: 600;
   margin-bottom: 15px;
 }
 
-#infos > h1{
+#infos>h1 {
   font-size: 50px;
-  color: white;
+  color: var(--quase-branco);
+  text-shadow: 0px 0px 5px var(--quase-branco);
   margin-bottom: 15px;
 }
 
-#infos > h2{
-  font-size: 40px;
-  color: var(--azul2);
+#infos>h2 {
+  font-size: 35px;
+  color: var(--Secundária);
+  font-family: italic;
   margin-bottom: 20px;
   margin-bottom: 15px;
 }
 
-#infos > p{
+#infos>p {
   color: white;
   text-align: justify;
   line-height: 30px;
 }
 
-#redes{
+#redes {
   display: flex;
   margin: 5px 0 0 0;
   align-items: center;
-  padding: 10px;
 }
 
-#redes > a{
+#redes>a {
   display: inline-block;
+  margin-right: 20px;
 }
 
-#redes > button{
-  border: none;
-  padding: 8px;
-  border-radius: 10px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: .2s ease-in;
-  background-color: var(--azul2);
-  color: white;
-  text-shadow: 0px 0px 10px white;
-}
-
-#redes > button > a{
-  color: white;
-  text-decoration: none;
-}
-
-#redes > button:hover{
-  scale: 110%;
-  background-color: transparent;
-  color: black;
-  border: 1px solid white;
-}
-
-#redes > a{
-  color: white;
-  margin: 0 10px 0 15px;
-}
-
-#redes > a > i{
+#redes>a>i {
   transition: .2s ease-in;
   font-size: 25px;
-  color: var(--azul2);
+  color: var(--Secundária);
 }
 
-#redes > a > i:hover{
+#redes>a>i:hover {
   scale: 150%;
 }
 
 /* SEÇAO SERVIÇOS */
-section#services{
+section#services {
   width: 100%;
   height: 400px;
   padding-bottom: 80px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.301);
 }
 
-section#services > h1{
-  color: white;
+section#services>h1 {
+  color: var(--quase-branco);
   font-size: 50px;
   margin-bottom: 40px;
   padding-top: 20px;
@@ -167,7 +158,7 @@ section#services > h1{
   font-family: serif;
 }
 
-section#services > ul{
+section#services>ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,10 +166,11 @@ section#services > ul{
   gap: 20px;
 }
 
-section#services > ul > li{
+section#services>ul>li {
   list-style: none;
+  background-color: var(--Secundária);
   border: 1px solid var(--azul2);
-  color: white;
+  color: var(--Texto-principal);
   width: 350px;
   padding: 10px;
   text-align: center;
@@ -186,17 +178,17 @@ section#services > ul > li{
   height: 250px;
 }
 
-section#services > ul > li > i{
+section#services>ul>li>i {
   font-size: 40px;
   margin-bottom: 20px;
 }
 
-section#services > ul > li > h1{
+section#services>ul>li>h1 {
   margin-bottom: 20px;
 }
 
 /* SEÇAO SKILLS */
-section#skills{
+section#skills {
   margin: 30px 0 0 0;
   color: white;
   padding: 20px 0;
@@ -204,42 +196,44 @@ section#skills{
   width: 100%;
 }
 
-section#skills > h1{
+section#skills>h1 {
   text-align: center;
   font-size: 40px;
   font-family: serif;
   margin-bottom: 60px;
 }
 
-#skills-container{
+#skills-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-#skills-container > #front{
-  border: 1px solid var(--azul);
-  width: 60%;
+#skills-container>#front {
+  border: 1px solid black;
+  width: auto;
   border-radius: 15px;
-  background-color: var(--azul);
+  background-color: var(--Secundária);
   padding: 10px;
 }
 
-#skills-container > #front > h1{
+#skills-container>#front>h1 {
   text-align: center;
   font-size: 30px;
   margin-bottom: 20px;
-  color: white;
+  color: var(--Texto-principal);
 }
 
-#skills-container > #front > ul{
+#skills-container>#front>ul {
   display: flex;
   margin-top: 20px;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-#skills-container > #front > ul > li{
+#skills-container>#front>ul>li {
   background-color: white;
   color: black;
   width: 150px;
@@ -251,44 +245,44 @@ section#skills > h1{
   margin: 0 20px 0 0;
 }
 
-#skills-container > #front > ul > li > i{
+#skills-container>#front>ul>li>i {
   font-size: 70px;
   color: black;
 }
 
-#skills-container > #front > ul > li > p{
+#skills-container>#front>ul>li>p {
   font-weight: 600;
 }
 
-#skills-container > #front > ul > li > img{
+#skills-container>#front>ul>li>img {
   width: 70px;
   height: 70px;
 }
 
-#skills-container > #back{
-  border: 1px solid var(--azul2);
+#skills-container>#back {
+  border: 1px solid black;
   width: 100%;
   margin-top: 50px;
-  background-color: var(--azul);
+  background-color: var(--Secundária);
   padding: 10px;
   width: 60%;
   border-radius: 15px;
 }
 
-#skills-container > #back > h1{
+#skills-container>#back>h1 {
   text-align: center;
   font-size: 30px;
   margin-bottom: 20px;
-  color: white;
+  color: var(--Texto-principal);
 }
 
-#skills-container > #back > ul{
+#skills-container>#back>ul {
   display: flex;
   margin-top: 20px;
   justify-content: center;
 }
 
-#skills-container > #back > ul > li{
+#skills-container>#back>ul>li {
   background-color: white;
   color: black;
   width: 150px;
@@ -300,27 +294,27 @@ section#skills > h1{
   margin: 0 20px 0 0;
 }
 
-#skills-container > #back > ul > li > i{
+#skills-container>#back>ul>li>i {
   font-size: 70px;
   color: black;
 }
 
-#skills-container > #back > ul > li > p{
+#skills-container>#back>ul>li>p {
   font-weight: 600;
 }
 
-#skills-container > #back > ul > li > img{
+#skills-container>#back>ul>li>img {
   width: 70px;
   height: 70px;
 }
 
-section#projects{
+section#projects {
   width: 100%;
   padding: 20px 30px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.301);
 }
 
-#projects > h1{
+#projects>h1 {
   text-align: center;
   color: white;
   padding: 30px 0 30px 0;
@@ -328,71 +322,72 @@ section#projects{
   font-family: serif;
 }
 
-section#projects > ul{
+section#projects>ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section#projects > ul > li{
+section#projects>ul>li {
   width: 350px;
   padding: 10px;
-  border: 1px solid var(--azul2);
-  color: white;
+  background-color: var(--Secundária);
+  border: 1px solid black;
+  color: var(--Texto-principal);
   border-radius: 10px;
   height: 390px;
   list-style: none;
   margin: 0 20px;
 }
 
-section#projects > ul > li > img{
+section#projects>ul>li>img {
   width: 100%;
   margin-bottom: 20px;
   height: 150px;
 }
 
-section#projects > ul > li > h1{
+section#projects>ul>li>h1 {
   text-align: center;
   margin-bottom: 10px;
 }
 
-section#projects > ul > li > p{
+section#projects>ul>li>p {
   text-align: justify;
 }
 
-.view{
+.view {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px 0;
 }
 
-.view > button{
+.view>button {
   padding: 10px;
   border: 1px solid;
   border-radius: 10px;
   transition: .3s ease;
   width: 80px;
-  background-color: rgba(0, 0, 255, 0.8);
+  background-color: var(--Fundo-escuro);
 }
 
-.view > button:hover{
+.view>button:hover {
   background-color: var(--azul2);
   border: 1px solid black;
   scale: 120%;
 }
 
-.view > button:hover > a{
+.view>button:hover>a {
   color: white;
 }
 
-.view > button > a{
+.view>button>a {
   text-decoration: none;
   font-weight: 600;
   color: white;
 }
 
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -401,7 +396,7 @@ footer{
   color: white;
 }
 
-footer > p{
+footer>p {
   text-align: center;
   color: yellow;
   font-weight: 900;
